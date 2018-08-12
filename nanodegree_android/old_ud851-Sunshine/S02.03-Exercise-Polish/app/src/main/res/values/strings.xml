@@ -22,7 +22,7 @@
     <!--Used in Action Bar, and in AndroidManifest to tell the device the name of this app.-->
     <!--It's good to keep this short, so your launcher icon isn't displayed with "The greatest Wea"-->
     <!--or something similar.-->
-    <string name="app_name">Sunshine</string>
+    <string name="app_name">AND Sunshine</string>
 
     <!--Used in overflow menu to refresh weather data-->
     <string name="action_refresh">Refresh</string>

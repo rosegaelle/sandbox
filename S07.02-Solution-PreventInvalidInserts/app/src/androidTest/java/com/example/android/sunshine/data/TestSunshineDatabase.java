@@ -204,25 +204,6 @@ public class TestSunshineDatabase {
     }
 
     /**
-<<<<<<< HEAD
-     * Tests to ensure that inserts into your database results in automatically incrementing row
-     * IDs and that row IDs are not reused.
-     * <p>
-     * If the INTEGER PRIMARY KEY column is not explicitly given a value, then it will be filled
-     * automatically with an unused integer, usually one more than the largest _ID currently in
-     * use. This is true regardless of whether or not the AUTOINCREMENT keyword is used.
-     * <p>
-     * If the AUTOINCREMENT keyword appears after INTEGER PRIMARY KEY, that changes the automatic
-     * _ID assignment algorithm to prevent the reuse of _IDs over the lifetime of the database.
-     * In other words, the purpose of AUTOINCREMENT is to prevent the reuse of _IDs from previously
-     * deleted rows.
-     * <p>
-     * To test this, we first insert a row into the database and get its _ID. Then, we'll delete
-     * that row, change the data that we're going to insert, and insert the changed data into the
-     * database again. If AUTOINCREMENT isn't set up properly in the WeatherDbHelper's table
-     * create statement, then the _ID of the first insert will be reused. However, if AUTOINCREMENT
-     * is setup properly, that older ID will NOT be reused, and the test will pass.
-=======
      * Tests the columns with null values cannot be inserted into the database.
      */
     @Test
@@ -284,7 +265,6 @@ public class TestSunshineDatabase {
     /**
      * Tests to ensure that inserts into your database results in automatically
      * incrementing row IDs.
->>>>>>> 4174cf2... S07.02-Exercise-PreventInvalidInserts
      */
     @Test
     public void testIntegerAutoincrement() {
